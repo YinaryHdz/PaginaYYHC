@@ -396,6 +396,10 @@ class CustomArticle extends HTMLElement {
       // reemplazar image
       const img = this.querySelector('img');
       img.src = article.image;
+      
+      //Reemplazar descripcion
+      const p = this.querySelector('p');
+      p.textContent = article.description;
     }
   }
 }
