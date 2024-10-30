@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="./funcionalidad.js" defer></script>
+</head>
+<body>
+    <custom-search>
+        <div class="flex p-10 shadow-md min-h-60px">
+            <div class="container">
+                <button class="menu-toggle transparent" id="btn">
+                    ≡
+                    <i class="bx bx-chevron-down" id="arrow"></i>
+                </button>
+            
+                <div class="dropdown-menu" id="dropdown">
+                    <ul>
+                        <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+                        <li><a href="news.html"><i class="bx bx-newspaper"></i> News</a></li>
+                        <li><a href="sports.html"><i class="bx bx-football"></i> Sports</a></li>
+                        <li><a href="technology.html"><i class="bx bx-laptop"></i> Technology</a></li>
+                        <li><a href="culture.html"><i class="bx bx-paint"></i> Culture</a></li>
+                        <li><a href="global.html"><i class="bx bx-globe"></i> Global</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="logo"> <a href="index.html"></a>
+                <span class="logo-item"><a href="index.html">Y</a></span>
+                <span class="logo-item"><a href="index.html">Y</a></span>
+                <span class="logo-item"><a href="index.html">H</a></span>
+                <span class="logo-item"><a href="index.html">C</a></span>
+            </span>
+            <button class="dialog-search transparent">
+                <img src="./img/lupa.png" alt="Buscar">
+            </button>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="sports.html">Sports</a>
+            <a href="technology.html">Technology</a>
+            <a href="culture.html">Culture</a>
+            <a href="global.html">Global</a>
+        </nav>
+        <dialog>
+            <button class="close-btn">🗙</button>
+            <h1>Search</h1>
+            <input type="search" id="site-search" name="q" />
+        
+            <template>
+              <li>
+                <div class="flex flex-col items-center card">
+                  <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                  <div class="flex flex-col justify-between">
+                    <h5 class="item-title">
+                      <a href="article.html?id={id}">
+                        {value}
+                      </a>
+                    </h5>
+                    <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
+                      reverse chronological order.
+                    </p>
+                    <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+                  </div>
+                </div>
+              </li>
+            </template>
+        
+            <ul id="search-results">
+            </ul>
+          </dialog>
+    </custom-search>
+    <custom-article>
+        <main class="grid-container">
+            <section class="grid-item grid-item-sports text-left" >
+                <article class="block">
+                    <h1 class="title">
+                        <a href="article.html?id=11">Record-Breaking Performances at the World Athletics Championships</a>
+                    </h1>
+                    <relative-time time="2024-10-08T09:30:00Z"></relative-time>
+                    <img src="https://assets.aws.worldathletics.org/large/62db7219246dc08c60cb72c2.jpg">
+                    <p class="description">
+                        Highlights from the thrilling performances at this year's World Athletics Championships.
+                    </p>                    
+                </article>
+                <article class="block">
+                    <h1 class="title">
+                        <a href="article.html?id=14">New Strategies in Sports Nutrition for Athletes</a>                    
+                    </h1>
+                    <relative-time time="2024-09-29T08:30:00Z"></relative-time>
+                    <img src="https://blog.nasm.org/hubfs/sports-nutrition-guide.jpg">
+                    <p class="description">This article delves into the latest trends in sports nutrition that are empowering athletes 
+                        to maximize their performance and recovery. We explore how personalized nutrition plans tailored 
+                        to individual needs and preferences are becoming increasingly popular, along with the rise of plant-based
+                        diets among elite athletes.</p>
+                </article> 
+            </section>
+                <section class=" grid-item grid-item-technology">
+                    <article class="block">
+                        <h1 class="title">
+                            <a href="article.html?id=15">Spain and Barcelona's Bonmati Wins Women's Ballon d'Or</a>
+                        </h1>
+                        <relative-time time="2024-10-28T15:00:00Z"></relative-time>
+                        <img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/2b49/live/169cd7d0-9573-11ef-9260-19e6a950e830.jpg.webp">
+                        <p class="description">
+                            Aitana Bonmati, star of both Spain's national team and FC Barcelona.
+                        </p>
+                        
+                    </article>
+                    <article class="block" >
+                        <h1 class="title">
+                            <a href="article.html?id=16">Rodri's Ballon d'Or 'What Spanish Football Deserves'</a>
+                        </h1>
+                        <relative-time time="2024-10-28T12:00:00Z"></relative-time>
+                        <img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/80c7/live/1a437360-95fc-11ef-8e2e-e71633ffe5ec.jpg.webp">
+                        <p class="description">
+                            Spain and Manchester City midfielder Rodri celebrates his Ballon d'Or win.
+                        </p>
+                    </article> 
+                </section>
+            
+                <section class="grid-item grid-item-global" >
+                    <article class="block">
+                        <h1 class="title">
+                            <a href="article.html?id=17">Tour de France to Take All-French Route for First Time Since 2020</a>
+                        </h1>
+                        <relative-time time="2024-10-27T13:00:00Z"></relative-time>
+                        <img src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2024/07/22/4008175-81301148-2560-1440.jpg">
+                        <p class="description">
+                            The Tour de France will feature an all-French route for the first time since 2020.
+                        </p>                        
+                    </article>
+                    <article class="block">
+                        <h1 class="title">
+                            <a href="article.html?id=26">Olympics 2024: Athletes Prepare for the Greatest Show on Earth</a>
+                        </h1>
+                        <relative-time time="2024-10-18T12:30:00Z"></relative-time>
+                        <img src="https://assets.goal.com/images/v3/blt8effcb693170c7e5/Top_Ten_Olympic_Athletes.jpg">
+                        <p class="description">
+                            As the world counts down to the 2024 Olympics, athletes from around the globe share their journeys and preparations.
+                        </p>                        
+                    </article> 
+                </section>
+        </main>
+    </custom-article>  
+    
+</body>
+</html>

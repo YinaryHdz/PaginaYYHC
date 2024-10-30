@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="./funcionalidad.js" defer></script>
+</head>
+<body>
+    <custom-search>
+        <div class="flex p-10 shadow-md min-h-60px">
+            <dropdown-menu>
+                <button class="menu-toggle transparent" id="btn">
+                    ≡
+                    <i class="bx bx-chevron-down" id="arrow"></i>
+                </button>
+            
+                <div class="dropdown-menu" id="dropdown">
+                    <ul>
+                        <li><a href="index.html"><i class="bx bx-home"></i> Home</a></li>
+                        <li><a href="news.html"><i class="bx bx-newspaper"></i> News</a></li>
+                        <li><a href="sports.html"><i class="bx bx-football"></i> Sports</a></li>
+                        <li><a href="technology.html"><i class="bx bx-laptop"></i> Technology</a></li>
+                        <li><a href="culture.html"><i class="bx bx-paint"></i> Culture</a></li>
+                        <li><a href="global.html"><i class="bx bx-globe"></i> Global</a></li>
+                    </ul>
+                </div>
+            </dropdown-menu>
+            <span class="logo"> <a href="index.html"></a>
+                <span class="logo-item"><a href="index.html">Y</a></span>
+                <span class="logo-item"><a href="index.html">Y</a></span>
+                <span class="logo-item"><a href="index.html">H</a></span>
+                <span class="logo-item"><a href="index.html">C</a></span>
+            </span>
+            <button class="dialog-search transparent">
+                <img src="./img/lupa.png" alt="Buscar">
+            </button>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="sports.html">Sports</a>
+            <a href="technology.html">Technology</a>
+            <a href="culture.html">Culture</a>
+            <a href="global.html">Global</a>
+        </nav>
+        <dialog>
+            <button class="close-btn">🗙</button>
+            <h1>Search</h1>
+            <input type="search" id="site-search" name="q" />
+        
+            <template>
+              <li>
+                <div class="flex flex-col items-center card">
+                  <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+                  <div class="flex flex-col justify-between">
+                    <h5 class="item-title">
+                      <a href="article.html?id={id}">
+                        {value}
+                      </a>
+                    </h5>
+                    <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
+                      reverse chronological order.
+                    </p>
+                    <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+                  </div>
+                </div>
+              </li>
+            </template>
+        
+            <ul id="search-results">
+            </ul>
+          </dialog>
+    </custom-search>
+    <custom-article>
+        <main class="grid-container">
+            <section class="grid-item grid-item-sports text-left" >
+                <article class="block">
+                    <h1 class="title">
+                        <a href="article.html?id=2">Polar Bears Face Higher Risk of Disease in a Warming Arctic</a>
+                    </h1>
+                    <relative-time time="2024-10-15T12:45:00Z"></relative-time>
+                    <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/787f/live/89155350-911d-11ef-88b8-8b00cbc9d4aa.jpg.webp">
+                    <p class="description">
+                        As Arctic temperatures rise, polar bears are increasingly exposed to new pathogens and diseases, exacerbated by melting ice and shifting ecosystems. 
+                    </p>          
+                </article>
+                <article class="block">
+                    <h1 class="title">
+                        <a href="article.html?id=3">The Superstorms from Space That Could End Modern Life</a>
+                    </h1>
+                    <relative-time time="2024-10-20T13:45:30Z"></relative-time>
+                    <img src="https://ichef.bbci.co.uk/images/ic/800xn/p0jjndp3.jpg.webp">
+                    <p class="description">
+                        Experts warn of solar superstorms that could wreak havoc on modern technology and infrastructure, causing massive blackouts, disruptions in satellite communications, and widespread GPS failure. 
+                    </p>
+                </article> 
+            </section>
+                <section class=" grid-item grid-item-technology">
+                    <article class="block">
+                        <h1 class="title">
+                            <a href="article.html?id=6">Global Climate Summit Tackles Urgent Environmental Issues</a>
+                        </h1>
+                        <relative-time time="2024-10-20T09:00:00Z"></relative-time>
+                        <img src="https://media.npr.org/assets/img/2021/11/13/gettyimages-1236538614_custom-e44f698c99e5b27f3513b65c4f43bce4afda42be.jpg">
+                        <p class="description">
+                            World leaders gather to discuss critical climate challenges and solutions at the Global Climate Summit in 2024.
+                        </p>
+                        
+                    </article>
+                    <article class="block" >
+                        <h1 class="title">
+                            <a href="article.html?id=10">World Leaders Unite for Peace at the Global Summit</a>
+                        </h1>
+                        <relative-time time="2024-10-10T11:15:00Z"></relative-time>
+                        <img src="https://static01.nyt.com/images/2022/11/07/world/07cop27-morning-lede-family-photo/07cop27-morning-lede-family-photo-videoSixteenByNine3000-v2.jpg">
+                        <p class="description">
+                            The recent Global Summit brought together heads of state and government from across the globe to discuss vital initiatives aimed.
+                        </p>
+                    </article> 
+                </section>
+            
+                <section class="grid-item grid-item-global" >
+                    <article class="block">
+                        <h1 class="title">
+                            <a href="article.html?id=13">Global Health Initiatives Aiming for Universal Vaccination</a>
+                        </h1>
+                        <relative-time time="2024-10-01T10:00:00Z"></relative-time>
+                        <img src="https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2021/01/03/coronavirus_israel_vaccine.jpg">
+                        <p class="description">
+                            In a concerted effort to combat global health crises, numerous initiatives are underway to ensure universal.
+                        </p>                  
+                    </article>
+                    <article class="block">
+                        <h1 class="title">
+                            <a href="article.html?id=27">Global Leaders Convene to Address Escalating Climate Crisis</a>
+                        </h1>
+                        <relative-time time="2024-10-18T12:30:00Z"></relative-time>
+                        <img src="https://static.euronews.com/articles/stories/08/17/26/86/1200x675_cmsv2_0e50dff4-9a79-5f18-bd6d-ace6c721c93d-8172686.jpg">
+                        <p class="description">
+                            World leaders and key international organizations have gathered to discuss urgent actions to mitigate the effects of climate change.
+                        </p>                        
+                    </article> 
+                </section>
+        </main>
+    </custom-article>  
+    
+</body>
+</html>
